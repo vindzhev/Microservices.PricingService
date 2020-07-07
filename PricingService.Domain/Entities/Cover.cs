@@ -1,9 +1,5 @@
 ﻿namespace PricingService.Domain.Entities
 {
-    using System;
-    
-    using MicroservicesPOC.Shared.Common.Entities;
-
     public class Cover
     {
         public Cover(string code, decimal price)

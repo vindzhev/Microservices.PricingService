@@ -4,7 +4,7 @@
     
     using Microsoft.AspNetCore.Mvc;
     
-    using MicroservicesPOC.Shared.Controllers;
+    using MicroservicesPOC.Shared.API.Controllers;
     
     using PricingService.Application.Tariffs.Commands;
 

@@ -3,10 +3,10 @@
     using System;
     using System.Collections.Generic;
     
+    using Newtonsoft.Json;
     using PricingService.Domain.Rules;
     
-    using MicroservicesPOC.Shared.Common.Entities;
-    using Newtonsoft.Json;
+    using MicroservicesPOC.Shared.Domain;
 
     public class Tariff : Entity<Guid>
     {

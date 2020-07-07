@@ -1,19 +1,17 @@
 ﻿namespace PricingService.Application.Tariffs.Commands
 {
     using System;
-    using System.Linq;
     using System.Threading;
     using System.Threading.Tasks;
     using System.Collections.Generic;
     
     using MediatR;
+    using AutoMapper;
     
     using MicroservicesPOC.Shared.Common.Models;
 
     using PricingService.Domain.Entities;
     using PricingService.Application.Common.Interfaces;
-    using Microsoft.AspNetCore.Routing;
-    using AutoMapper;
 
     public class CalculatePriceCommand : IRequest<CalculatePriceResult>
     {
