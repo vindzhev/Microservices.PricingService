@@ -3,12 +3,11 @@
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
 
-    using MicroservicesPOC.Shared;
+    using MicroservicesPOC.Shared.Common;
 
     using PricingService.Infrastrucutre.Services;
     using PricingService.Application.Common.Interfaces;
     using PricingService.Infrastrucutre.Persistance;
-    using Marten;
 
     public static class ServiceRegistration
     {

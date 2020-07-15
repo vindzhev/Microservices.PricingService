@@ -24,7 +24,7 @@
             DocumentStore.For(_ =>
             {
                 _.Connection(connectionString);
-                _.DatabaseSchemaName = "policy_service";
+                _.DatabaseSchemaName = "public";
                 _.Serializer(CustomizeJsonSerializer());
 
                 _.Schema.For<Tariff>().Duplicate(x => x.Code, pgType: "varchar(50)", configure: idx => idx.IsUnique = true);
