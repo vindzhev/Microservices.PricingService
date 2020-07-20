@@ -96,7 +96,7 @@ namespace PricingService.API
                 house.BasePremiumRules.AddRule("C4", null, "50M");
 
                 house.DiscountMarkupRules.AddRule("FLOOD == \"YES\"", 1.50M);
-                house.DiscountMarkupRules.AddRule("NUM_OF_CLAIM > 1 ", 1.25M);
+                house.DiscountMarkupRules.AddRule("NUM_OF_CLAIMS > 1 ", 1.25M);
 
                 dataStore.Tariffs.Add(house);
             }
@@ -123,7 +123,7 @@ namespace PricingService.API
                 farm.BasePremiumRules.AddRule("C4", null, "40M");
 
                 //farm.DiscountMarkupRules.AddPercentMarkup("FLOOD == \"YES\"", 1.50M);
-                farm.DiscountMarkupRules.AddRule("NUM_OF_CLAIM > 2", 2.00M);
+                farm.DiscountMarkupRules.AddRule("NUM_OF_CLAIMS > 2", 2.00M);
 
                 dataStore.Tariffs.Add(farm);
             }
@@ -133,7 +133,7 @@ namespace PricingService.API
                 var car = new Domain.Entities.Tariff("CAR");
 
                 car.BasePremiumRules.AddRule("C1", null, "100M");
-                car.DiscountMarkupRules.AddRule("NUM_OF_CLAIM > 2", 1.50M);
+                car.DiscountMarkupRules.AddRule("NUM_OF_CLAIMS > 2", 1.50M);
 
                 dataStore.Tariffs.Add(car);
             }
